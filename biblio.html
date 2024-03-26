@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/png" href="styles/loguito.png">
+    <title>anatube: para el amor de mi vida</title>
+    <style>
+        .active {
+            background-color: #e0e0e0;
+        }
+
+        /* Estilo para los enlaces */
+        .nav-link {
+            color: black;
+            text-decoration: none; /* Quitar subrayado */
+        }
+
+        /* Estilo para los enlaces activos */
+        .nav-link.active {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo left">
+            <i id="menu" class="material-icons">menu</i>
+            <img src="styles/anatube.png" height="25" width="100">
+        </div>
+        <div class="search center">
+            <form action="">
+                <input type="text" placeholder="Search">
+                <button><i class="material-icons">search</i></button>
+            </form>
+            <i class="material-icons mic">mic</i>
+        </div>
+        <div class="icons right">
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons display-this">account_circle</i>
+        </div>
+    </header>
+    <main>
+        <div class="side-bar">
+            <div class="nav">
+                <a class="nav-link" href="index.html">
+                    <i class="material-icons">home</i>
+                    <span>Mi Lugar Seguro</span>
+                </a>
+                <a class="nav-link" href="arde.html">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Mi Amor Por Ti, Arde</span>
+                </a>
+                <a class="nav-link" href="sub.html">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Suscríbete A Mi Vida</span>
+                </a>
+                <hr>
+                <a class="nav-link active" href="biblio.html">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Biblioteca del Amor</span>
+                </a>
+                <a class="nav-link" href="nuestro.html">
+                    <i class="material-icons">history</i>
+                    <span>Nuestro Historial</span>
+                </a>
+
+                <a class="nav-link" href="gustas.html">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Me Gusta(s)</span>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="videos">
+                <div class="video">
+            <div class="remix-app" hash="204fce138989f9a4">
+                <script src="https://p.interacty.me/l.js" async></script>
+            </div>
+        </div>
+        <div class="video">
+            <div class="interacty_padding" style="position: relative; padding: 99.5% 0 0 0;">
+                <div class="interacty_wrapper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center;">
+                    <iframe style="border: none; width: 100%; height: 100%;" src="https://p.interacty.me/d483e9878edfbb79/iframe.html"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="interacty_padding" style="position: relative; padding: 99.5% 0 0 0;">
+                <div class="interacty_wrapper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center;">
+                    <iframe style="border: none; width: 100%; height: 100%;" src="https://p.interacty.me/fb2b14d72e6fcf02/iframe.html"></iframe>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

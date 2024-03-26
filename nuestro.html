@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/png" href="styles/loguito.png">
+    <title>anatube: para el amor de mi vida</title>
+    <style>
+        .active {
+            background-color: #e0e0e0;
+        }
+
+        /* Estilo para los enlaces */
+        .nav-link {
+            color: black;
+            text-decoration: none;
+            /* Quitar subrayado */
+        }
+
+        /* Estilo para los enlaces activos */
+        .nav-link.active {
+            background-color: #e0e0e0;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo left"> <i id="menu" class="material-icons">menu</i> <img
+
+          src="styles/anatube.png" height="25" width="100"> </div>
+      <div class="search center">
+        <form action=""> <input placeholder="Search" type="text"> <button><i class="material-icons">search</i></button>
+        </form>
+        <i class="material-icons mic">mic</i> </div>
+      <div class="icons right"> <i class="material-icons">videocam</i> <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i> <i class="material-icons display-this">account_circle</i>
+      </div>
+    </header>
+    <main>
+      <div class="side-bar">
+        <div class="nav">
+            <a class="nav-link" href="index.html">
+                <i class="material-icons">home</i>
+                <span>Mi Lugar Seguro</span>
+            </a>
+            <a class="nav-link" href="arde.html">
+                <i class="material-icons">local_fire_department</i>
+                <span>Mi Amor Por Ti, Arde</span>
+            </a>
+            <a class="nav-link" href="sub.html">
+                <i class="material-icons">subscriptions</i>
+                <span>Suscríbete A Mi Vida</span>
+            </a>
+            <hr>
+            <a class="nav-link" href="biblio.html">
+                <i class="material-icons">library_add_check</i>
+                <span>Biblioteca del Amor</span>
+            </a>
+            <a class="nav-link active" href="nuestro.html">
+                <i class="material-icons">history</i>
+                <span>Nuestro Historial</span>
+            </a>
+
+            <a class="nav-link" href="gustas.html">
+                <i class="material-icons">thumb_up</i>
+                <span>Me Gusta(s)</span>
+            </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content">
+            <h1 style="text-align: center;">Dicen que las imagenes valen más que mil palabras, así que...</h1><br><br>
+          <div class="videos">
+
+            <div class="video">
+              <h1 style="text-align: center;">Me complementas</h1>
+              <br>
+              <div style="text-align: center;" ><img src="styles/puzzle.jpeg" width="200" height="200"></img></div>
+            </div>
+
+            <div class="video">
+                <h1 style="text-align: center;">Extraño sus abracitos :c</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/abrazo.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">Eres eso y más</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/flor.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">i got u <3</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/gotyou.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">"Se puede estirar, pero nunca romper"</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/hilo.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">Su primera notita :')</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/nota1.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">Gracias por ser mi heroína</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/nota2.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">Hay que abrir nuestra repostería ¿no?</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/pastelito.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">Quiero saber TODO de usted</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/astro.jpeg" width="200" height="200"></img></div>
+              </div>
+
+              <div class="video">
+                <h1 style="text-align: center;">Me gusta ser un planetita en su universo</h1>
+                <br>
+                <div style="text-align: center;" ><img src="styles/mundo.jpeg" width="200" height="200"></img></div>
+              </div>
+
+        </div>
+      </div>
+    </main>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+  </body>
+</html>
